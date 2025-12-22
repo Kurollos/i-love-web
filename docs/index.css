@@ -1,0 +1,82 @@
+/* ------------------------- */
+/* CUSTOM FONT               */
+/* ------------------------- */
+@font-face {
+  font-family: "MyFont";
+  src: url("/Assets/PixelFontKurollos-Regular.otf");
+}
+
+.fontkurollos {
+  font-family: MyFont;
+}
+
+/* ------------------------- */
+/* GLOBAL PAGE STYLE         */
+/* ------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: #222;
+  color: white;
+}
+
+section {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+/* ------------------------- */
+/* JOURNAL CARD STYLE        */
+/* ------------------------- */
+.journal-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.journal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.journal-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.journal-card h4 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.journal-card ul {
+  margin-left: 20px;
+}
+
+/* ------------------------- */
+/* LINKS                     */
+/* ------------------------- */
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}

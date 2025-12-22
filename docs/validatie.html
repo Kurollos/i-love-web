@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formuliervalidatie Test</title>
+
+    <style>
+        /* Simpele styling zodat je feedback goed ziet */
+        form {
+            padding: 20px;
+            border: 2px solid #ccc;
+            width: 300px;
+            margin-bottom: 40px;
+        }
+
+        /* Browser feedback stylen */
+        form:has(:user-invalid) {
+            background: #ffdddd;
+        }
+
+        form:has(:user-valid) {
+            background: #ddffdd;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Formuliervalidatie</h1>
+
+<!-- ===== FORM 1: required input veld ===== -->
+<form id="zoekForm">
+  <label>Zoekterm <input required></label>
+  <button type="submit">Zoek!</button>
+</form>
+
+<script type="module">
+    // Stap 1: zoek de input
+    let inputElement = document.querySelector('#zoekForm input');
+
+    // Stap 2: luister naar invalid event
+    inputElement.addEventListener('invalid', function() {
+
+        // Stap 3: aangepaste feedback
+        inputElement.setCustomValidity('Dit veld mag niet leeg zijn hoor…');
+    });
+
+    // Nodig om custom melding weer te resetten
+    inputElement.addEventListener('input', function() {
+        inputElement.setCustomValidity('');
+    });
+</script>

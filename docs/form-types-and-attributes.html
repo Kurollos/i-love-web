@@ -1,0 +1,149 @@
+<article class="journal-card">
+  <h3>Journal 20 - 19-11-2025</h3>
+
+  <h4>Waarom heeft elke input een label nodig?</h4>
+  <ul>
+    <li>Zodat mensen begrijpen wat er in het invoerveld moet worden ingevuld.</li>
+    <li>Helpt bij toegankelijkheid, vooral voor schermlezers.</li>
+    <li>Verbeterd de gebruiksvriendelijkheid en duidelijkheid van het formulier.</li>
+  </ul>
+
+  <h4>Wat doe je met de attributen type, autocomplete, inputmode en enterkeyhint?</h4>
+  <ul>
+    <li><strong>type:</strong> Geeft het soort invoer aan, zoals "text", "email", "number", enz., zodat het veld correct wordt gevalideerd en de juiste toetsenbordopties op mobiel worden weergegeven.</li>
+    <li><strong>autocomplete:</strong> Helpt de browser eerder ingevoerde waarden voor te stellen, zoals naam, adres of e-mail.</li>
+    <li><strong>inputmode:</strong> Geeft aan welk soort toetsenbord op mobiel moet verschijnen, bijvoorbeeld numeriek, e-mail of tekst.</li>
+    <li><strong>enterkeyhint:</strong> Geeft een hint voor de actie van de enterknop, zoals "next", "search" of "send".</li>
+  </ul>
+
+  <h4>Wat doen fieldsets en legends in een formulier?</h4>
+  <ul>
+    <li><strong>fieldset:</strong> Groepeert gerelateerde invoervelden visueel en semantisch.</li>
+    <li><strong>legend:</strong> Geeft een titel of uitleg voor de groep velden binnen de fieldset.</li>
+  </ul>
+
+  <h4>Wat doen required, maxlength, min, max en step?</h4>
+  <ul>
+    <li><strong>required:</strong> Verplicht de gebruiker om een waarde in te vullen voordat het formulier kan worden verzonden.</li>
+    <li><strong>maxlength:</strong> Beperkt het maximaal aantal tekens dat kan worden ingevoerd.</li>
+    <li><strong>min / max:</strong> Bepaalt de minimale en maximale waarde voor numerieke invoer of datumvelden.</li>
+    <li><strong>step:</strong> Stelt de stapgrootte in voor numerieke invoer of datumtijdvelden, zoals bij een slider of nummerveld.</li>
+  </ul>
+
+  <h4>Welke input peseudo-classes ken je nog niet</h4>
+    <li>weet ik niet.</li>
+</article>
+
+<article class="journal-card">
+  <h3>Journal 21 - 21-11-2025</h3>
+
+  <h4>Maak je genoeg gebruik van de gezamenlijke stylesheet?</h4>
+  <ul>
+    <li>Ja, ik maak gebruik van herbruikbare kleuren zoals <code>var(--color-primary)</code> en <code>var(--color-secondary)</code> voor tekst en achtergronden.</li>
+    <li>Ik gebruik spacing en font-sizes uit de gezamenlijke stylesheet, zoals <code>var(--spacing-m)</code> en <code>var(--font-size-xxl)</code>, zodat de opmaak consistent blijft.</li>
+  </ul>
+
+  <h4>Voorbeelden van cascade in mijn CSS</h4>
+  <ul>
+    <li>
+      <strong>Hover overschrijft basisstijl:</strong> 
+      <code>
+        header nav ul li a { color: var(--color-secondary); } <br>
+        header nav ul li a:hover { color: var(--color-accent); }
+      </code>
+    </li>
+    <li>
+      <strong>Media query overschrijft standaardregel:</strong>
+      <code>
+        @media (min-width: 900px) { h1 { font-size: var(--font-size-xxl); } }
+      </code>
+    </li>
+  </ul>
+
+  <h4>Drie custom properties die ik gebruik uit de gezamenlijke stylesheet</h4>
+  <ul>
+    <li><code>--color-primary</code> — primaire kleur voor tekst en achtergronden</li>
+    <li><code>--color-secondary</code> — secundaire kleur voor achtergronden en tekst</li>
+    <li><code>--font-size-xxl</code> — extra grote font-size voor titels</li>
+  </ul>
+</article>
+
+ <h4>Drie custom properties die ik gebruik uit de gezamenlijke stylesheet</h4>
+  <ul>
+    <li><code>--color-primary</code> — primaire kleur voor tekst en achtergronden</li>
+    <li><code>--color-secondary</code> — secundaire kleur voor achtergronden en tekst</li>
+    <li><code>--font-size-xxl</code> — extra grote font-size voor titels</li>
+  </ul>
+</article>
+
+ <h4>Heb je door de code review Verbeterpunten gevonden voor de stylesheet</h4>
+  <ul>
+    <li>Ja ik heb wat gevonden</li>
+  </ul>
+</article>
+
+<article class="journal-card">
+  <h3>Journal 22 - 24-11-2025</h3>
+
+  <h4>Ontwerpprincipes in de praktijk: Gestalt-wetten onderzoeken</h4>
+  <ul>
+    <li><strong>Law of Common Region:</strong> Elementen worden waargenomen als een groep als ze een duidelijk afgebakend gebied delen.
+      <ul>
+        <li>Bronnen:
+          <ul>
+            <li><a href="https://lawsofux.com/law-of-common-region" target="_blank">Law of Common Region - Laws of UX</a></li>
+            <li><a href="#" target="_blank">The Principle of Common Region: Containers Create Groupings - Aurora Harley</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Law of Proximity:</strong> Objecten die dicht bij elkaar staan, worden als een groep gezien.
+      <ul>
+        <li>Bronnen:
+          <ul>
+            <li><a href="https://lawsofux.com/law-of-proximity" target="_blank">Law of Proximity - Laws of UX</a></li>
+            <li><a href="#" target="_blank">Proximity Principle in Visual Design - Aurora Harley</a></li>
+            <li><a href="#" target="_blank">Gestalt Principles of Design — Proximity - Christopher Butler</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Law of Similarity:</strong> Het menselijk oog ziet vergelijkbare elementen als een groep, zelfs als ze gescheiden zijn.
+      <ul>
+        <li>Bronnen:
+          <ul>
+            <li><a href="https://lawsofux.com/law-of-similarity" target="_blank">Law of Similarity - Laws of UX</a></li>
+            <li><a href="#" target="_blank">Similarity Principle in Visual Design - Aurora Harley</a></li>
+            <li><a href="#" target="_blank">Gestalt Principles of Design — Similarity - Christopher Butler</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Notities bij de bronnen</h4>
+  <ul>
+    <li>Schetsen en aantekeningen gemaakt per wet.</li>
+    <li>Voor elk principe een goed en fout voorbeeld in Figma uitgewerkt met huisstijl-elementen.</li>
+    <li>Herbruikbare kleuren en spacing toegepast uit de gezamenlijke stylesheet, zoals <code>var(--color-primary)</code> en <code>var(--spacing-m)</code>.</li>
+  </ul>
+</article>
+
+ <h4>noem 2 dingen die je wilt nog leren</h4>
+  <ul>
+    <li> Ik wil nog leren wat de andere gestalt layout zijn</li>
+    <li>waarom zijn die gestalt layout zo belangrijk</li>
+  </ul>
+</article>
+
+ <h4>Geef 1 iemand een compliment</h4>
+  <ul>
+    <li>Mathijs en Tom zijn goede studenten</li>
+  </ul>
+</article>
+
+
+</body>
+</html>
